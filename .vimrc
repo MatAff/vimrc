@@ -36,4 +36,4 @@ let @f='^ywifor(size_t pi = 0;$a; ++pi)$^y0opa{opa}Opa    '
 "let @g='^ywifor(size_t pi = 0;$a; ++pi)@p'
 " Use p to add { } 
 let @p='^y0opa{opa}Opa    '
-
+let @t=':%s/\t/    /g'
