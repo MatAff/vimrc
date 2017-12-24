@@ -1,6 +1,8 @@
 " Set welcome message
 " :echo "Hi Mat welcome back!"
 
+:syntax on
+
 " Remap jk to be <esc> in insert mode
 :inoremap jk <esc> 
 :vnoremap jk <esc> 
