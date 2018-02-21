@@ -21,6 +21,9 @@ let maplocalleader = "\\"
 " Use Ctrl-U to convert word to uppercase in insert mode
 :inoremap <c-u> <esc>bveUea
 
+" Use ww to comment out line
+:noremap ww I//<esc>
+
 " Remaps to open .vimrc in a seperate window
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
