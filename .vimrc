@@ -30,6 +30,7 @@ let maplocalleader = "\\"
 :iabbrev abin #include <stdio.h><CR>#include <iostream><CR>#include <vector><CR>#include <string><CR>
 :iabbrev abns using namespace std;
 :iabbrev abpr #pragma once
+:iabbrev abcontains bool found = (std::find(list.begin(), list.end(), var) != list.end());
 
 " Template h file
 :iabbrev abh #pragma once<CR>#include <stdio.h><CR>#include <iostream><CR>#include <vector><CR>#include <string><CR><CR>// ClassName<CR>class ClassName<CR>{<CR>public:<CR>    ClassName();<CR>    ClassName(int arg1);<CR>    ~ClassName ();<CR>    bool methodName();<CR>    std::string toString();<CR>private:<CR>    int var1<CR>};<CR>
