@@ -1,17 +1,17 @@
 " Set welcome message
+:vnoremap jk <esc> k
 " :echo "Hi Mat welcome back!"
 
 :syntax on
 
 " Remap jk to be <esc> in insert mode
 :inoremap jk <esc> k
-:vnoremap jk <esc> k
 
 " Set line at 80 characters
 ":set colorcolumn=80
 
 " Add relative line number
-:set number relativenumber
+:set number "relativenumber
 
 " Set leader and local leader symbols
 let mapleader = '-'
@@ -64,6 +64,8 @@ let maplocalleader = "\\"
 :autocmd FileType java :iabbrev impUtil import java.util.*;<CR><CR>
 :autocmd FileType java :iabbrev impStream import java.util.stream.*;<CR><CR>
 :autocmd FileType java :iabbrev impConc import java.util.concurrent.*;<CR><CR>
+:autocmd FileType java :iabbrev impFunc import java.util.function.*;<CR><CR>
+:autocmd FileType java :iabbrev impIO import java.io.*;<CR><CR>
 
 " Remappings (for common statements)
 :autocmd FileType java :nnoremap <leader>pk opackage <C-r>=expand('%:h')<CR>;<CR><CR>
