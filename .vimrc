@@ -66,6 +66,7 @@ let maplocalleader = "\\"
 :autocmd FileType java :iabbrev impConc import java.util.concurrent.*;<CR><CR>
 :autocmd FileType java :iabbrev impFunc import java.util.function.*;<CR><CR>
 :autocmd FileType java :iabbrev impIO import java.io.*;<CR><CR>
+:autocmd FileType java :iabbrev impTime import java.time.*;<CR><CR>
 
 " Remappings (for common statements)
 :autocmd FileType java :nnoremap <leader>pk opackage <C-r>=expand('%:h')<CR>;<CR><CR>
@@ -82,5 +83,6 @@ let maplocalleader = "\\"
 let @f='^ywifor(size_t pi = 0;$a; ++pi)$^y0opa{opa}Opa    '
 "let @g='^ywifor(size_t pi = 0;$a; ++pi)@p'
 " Use p to add { } 
-let @p='^y0opa{opa}Opa    '
+let @p='^y0oylpa{opa}Opa    '
 let @t=':%s/\t/    /g'
+let @h='yypISystem.out.println("A");'
