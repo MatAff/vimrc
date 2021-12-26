@@ -1,8 +1,8 @@
-:echo "Hi Mat welcome back!"
+" :echo "Hi Mat welcome back!"
 
 " remap jk to mean ESC
-:inoremap jk <esc> k
-:vnoremap jk <esc> k
+:inoremap jk <esc> 
+:vnoremap jk <esc> 
 :syntax on
 
 " Set line at 80 characters
@@ -42,3 +42,30 @@ let @f='^ywifor(size_t pi = 0;$a; ++pi)$^y0opa{opa}Opa    '
 let @p='^y0oylpa{opa}Opa    '
 let @t=':%s/\t/    /g'
 let @h='yypISystem.out.println("A");'
+
+" VUNDLE
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'fatih/vim-go'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
